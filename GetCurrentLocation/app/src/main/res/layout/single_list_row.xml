@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/weatherImage"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:src="@drawable/weather"/>
+
+    <TextView
+        android:id="@+id/day_weather"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/weatherImage"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+
+        android:text="day"
+        android:textStyle="italic"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/morn_weather"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="morn"
+        android:textStyle="italic"
+        android:layout_below="@+id/day_weather"
+        android:layout_alignStart="@+id/night_weather" />
+
+    <TextView
+        android:id="@+id/night_weather"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="night"
+        android:textStyle="italic"
+        android:layout_below="@+id/morn_weather"
+        android:layout_alignStart="@+id/day_weather" />
+
+
+
+
+    <TextView
+        android:id="@+id/date_weather"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="date"
+        android:textStyle="italic"
+        android:layout_below="@+id/night_weather"
+        android:layout_alignStart="@+id/night_weather" />
+
+
+</RelativeLayout>
